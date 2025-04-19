@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/variables";
+
+.heading-1 {
+    font-family: $primary_font_family;
+    font-size: 48px;
+    font-weight: $font-semibold;
+    color: $color-primary;
+}
+
+.heading-2 {
+    font-family: $primary_font_family;
+    font-size: 30px;
+    font-weight: $font-semibold;
+    color: $color-primary;
+}
+
+.genre-card {
+    font-family: $primary_font_family;
+    font-size: 20px;
+    font-weight: $font-regular;
+    color: $color-grey-dark;
+}
+
+.body {
+    font-family: $primary_font_family;
+    font-size: 16px;
+    font-weight: $font-regular;
+    color: $color-grey-dark;
+}
+
+.body {
+    font-family: $primary_font_family;
+    font-size: 16px;
+    font-weight: $font-regular;
+    color: $color-grey-dark;
+}
+
+.search-box {
+    font-family: $primary_font_family;
+    font-size: 16px;
+    font-weight: $font-regular;
+    color: $color-grey-medium;
+}
+
+.book-name {
+    font-family: $primary_font_family;
+    font-size: 12px;
+    font-weight: $font-regular;
+    color: $color-grey-dark;
+}
+
+.author-name {
+    font-family: $primary_font_family;
+    font-size: 12px;
+    font-weight: $font-regular;
+    color: $color-grey-medium;
+}
