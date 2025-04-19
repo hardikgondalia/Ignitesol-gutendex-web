@@ -1,0 +1,51 @@
+<div class="book-list-container">
+  <div class="filters">
+    <div class="filter-group">
+      <label for="search">Search:</label>
+      <input id="search" type="text" [(ngModel)]="searchQuery" (input)="onSearchChange()"
+             placeholder="Search by title or author">
+    </div>
+
+    <div class="filter-group">
+      <label for="language">Language:</label>
+      <input id="language" type="text" [(ngModel)]="languageFilter" (change)="onFilterChange()"
+             placeholder="en, fr, es (comma separated)">
+    </div>
+    <div class="filter-group">
+      <label for="mimeType">MIME Type:</label>
+      <input id="mimeType" type="text" [(ngModel)]="mimeTypeFilter" (change)="onFilterChange()"
+             placeholder="text/html, image/jpeg">
+    </div>
+    <div class="filter-group">
+      <label for="topic">Topic:</label>
+      <input id="topic" type="text" [(ngModel)]="topicFilter" (change)="onFilterChange()"
+             placeholder="fiction, children">
+    </div>
+  </div>
+
+  <div class="books-grid" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="300"
+       (scrolled)="onScroll()" [scrollWindow]="false">
+    <div class="book-card" *ngFor="let book of books" (click)="openBook(book)">
+      <div class="book-cover">
+        <img [src]="getCoverImage(book)" alt="Book cover">
+      </div>
+      <div class="book-details">
+        <h3>{{ book.title }}</h3>
+        <p class="author">{{ getAuthorNames(book.authors) }}</p>
+        <p class="downloads">Downloads: {{ book.download_count | number }}</p>
+        <div class="languages">
+          <span *ngFor="let lang of book.languages" class="language-tag">{{ lang }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="isLoading" class="loading-spinner">
+    <div class="spinner"></div>
+    <p>Loading more books...</p>
+  </div>
+
+  <div *ngIf="!hasMore && books.length > 0" class="no-more">
+    No more books to load
+  </div>
+</div>

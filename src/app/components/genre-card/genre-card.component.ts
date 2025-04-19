@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-genre-card',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './genre-card.component.html',
   styleUrl: './genre-card.component.scss'
 })

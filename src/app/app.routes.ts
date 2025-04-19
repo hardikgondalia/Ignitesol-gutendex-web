@@ -7,6 +7,10 @@ export const routes: Routes = [
     loadComponent: () => import('./components/genre-list/genre-list.component').then((m) => m.GenreListComponent),
   },
   {
+    path: 'genre/book/:category',
+    loadComponent: () => import('./components/book-list/book-list.component').then((m) => m.BookListComponent),
+  },
+  {
     path: 'user',
     component: UserComponent
   }
