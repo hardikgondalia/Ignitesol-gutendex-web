@@ -1,0 +1,30 @@
+[
+  {
+    "name": "FICTION",
+    "image": "assets/images/Fiction.svg"
+  },
+  {
+    "name": "DRAMA",
+    "image": "assets/images/Drama.svg"
+  },
+  {
+    "name": "HUMOUR",
+    "image": "assets/images/Humour.svg"
+  },
+  {
+    "name": "POLITICS",
+    "image": "assets/images/Politics.svg"
+  },
+  {
+    "name": "PHILOSOPHY",
+    "image": "assets/images/Philosophy.svg"
+  },
+  {
+    "name": "HISTORY",
+    "image": "assets/images/History.svg"
+  },
+  {
+    "name": "ADVENTURE",
+    "image": "assets/images/Adventure.svg"
+  }
+]

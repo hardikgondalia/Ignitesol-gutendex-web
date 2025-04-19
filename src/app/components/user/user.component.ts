@@ -8,11 +8,10 @@ import { InfiniteScrollDirective } from 'ngx-infinite-scroll';
 import { PdfViewerComponent } from "../pdf-viewer/pdf-viewer.component";
 
 @Component({
-  selector: 'app-user',
-  standalone: true,
-  imports: [CommonModule, RouterModule, InfiniteScrollDirective, PdfViewerComponent],
-  templateUrl: './user.component.html',
-  styleUrl: './user.component.scss'
+    selector: 'app-user',
+    imports: [CommonModule, RouterModule, InfiniteScrollDirective, PdfViewerComponent],
+    templateUrl: './user.component.html',
+    styleUrl: './user.component.scss'
 })
 export class UserComponent implements OnInit {
   users: any[] = [];

@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-genre-card',
-  standalone: true,
   imports: [],
   templateUrl: './genre-card.component.html',
   styleUrl: './genre-card.component.scss'
 })
-export class GenreCardComponent {
-
+export class GenreCardComponent implements OnInit {
+  @Input() name!: string;
+  @Input() image!: string;
+  constructor(){}
+  ngOnInit(): void {
+  }
 }

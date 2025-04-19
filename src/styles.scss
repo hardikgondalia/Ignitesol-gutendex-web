@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./assets/variables";
+@use "./assets/variables" as *;
 
 .heading-1 {
     font-family: $primary_font_family;
