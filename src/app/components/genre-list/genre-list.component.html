@@ -1,13 +1,21 @@
-<div class="body d-flex">
+<div class="body d-flex flex-column">
     <div class="heading-pattern">
         <div class="container">
             <div class="d-flex flex-column">
-                <div class="heading-1">Gutenberg Project</div>
-                <div class="genre-card">A social cataloging website that allows you to
+                <div class="heading-1 mt-5">Gutenberg Project</div>
+                <div class="genre-card mb-5">A social cataloging website that allows you to
                     freely search its database of books,
                     annotations, and reviews.</div>
             </div>
         </div>
     </div>
-    <app-genre-card *ngFor="let category of categories" [name]="category.name" [image]="category.image"></app-genre-card>
+    <div class="genre-card-list mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-12 col-md-6 mb-2" *ngFor="let category of categories">
+                    <app-genre-card [name]="category.name" [image]="category.image"></app-genre-card>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
