@@ -5,6 +5,10 @@ a {
   color: inherit;
 }
 
+.header {
+  background-color: #fff;
+}
+
 .search-bar {
   border-radius: 4px;
   padding: 0 10px;
@@ -20,13 +24,14 @@ a {
   background-color: $color-grey-light;
 }
 
-.books-grid{
-  height: 80vh;
+.books-grid {
+  height: 58vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
 .book-card {
-  & .book-cover {
+  & .book-cover img {
     width: 114px;
     height: 162px;
     border-radius: 8px;

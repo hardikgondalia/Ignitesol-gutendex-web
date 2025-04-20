@@ -1,34 +1,36 @@
 <div class="body">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="heading-1">
-          <a href="/genre" class="text-capitalize"><img src="../../../assets/images/Back.svg"> {{topicFilter}}</a>
+  <div class="header py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="heading-1">
+            <a href="/genre" class="text-capitalize"><img src="../../../assets/images/Back.svg"> {{topicFilter}}</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="input-group">
-          <span class="input-group-append">
-            <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5"
-              type="button">
-              <img src="../../../assets/images/Search.svg">
-            </button>
-          </span>
-          <input class="form-control border-start-0 search-bar search-box" id="search" type="search"
-            [(ngModel)]="searchQuery" (input)="onSearchChange()" placeholder="Search">
+      <div class="row">
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5"
+                type="button">
+                <img src="../../../assets/images/Search.svg">
+              </button>
+            </span>
+            <input class="form-control border-start-0 search-bar search-box" id="search" type="search"
+              [(ngModel)]="searchQuery" (input)="onSearchChange()" placeholder="Search">
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container py-5">
     <div class="books-grid" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="300"
       (scrolled)="onScroll()" [scrollWindow]="false">
       <div class="row">
         <div class="col-4 col-lg-2 book-card" *ngFor="let book of books" (click)="openBook(book)">
           <div class="book-cover">
-            <img [src]="getCoverImage(book)" alt="Book cover" class="img-thumbnail">
+            <img [src]="getCoverImage(book)" alt="Book cover">
           </div>
           <div class="book-details mt-1">
             <div class="book-name">{{ book.title }}</div>
