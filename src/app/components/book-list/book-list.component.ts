@@ -7,11 +7,12 @@ import { InfiniteScrollDirective } from 'ngx-infinite-scroll';
 import { Book } from '../../models/book.model';
 import { FormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { BookCardComponent } from "../book-card/book-card.component";
 
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, InfiniteScrollDirective, FormsModule],
+  imports: [CommonModule, RouterModule, InfiniteScrollDirective, FormsModule, BookCardComponent],
   templateUrl: './book-list.component.html',
   styleUrl: './book-list.component.scss'
 })

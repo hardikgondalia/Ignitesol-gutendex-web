@@ -29,13 +29,8 @@
       (scrolled)="onScroll()" [scrollWindow]="false">
       <div class="row">
         <div class="col-4 col-lg-2 book-card" *ngFor="let book of books" (click)="openBook(book)">
-          <div class="book-cover">
-            <img [src]="getCoverImage(book)" alt="Book cover">
-          </div>
-          <div class="book-details mt-1">
-            <div class="book-name">{{ book.title }}</div>
-            <div class="author-name">{{ getAuthorNames(book.authors) }}</div>
-          </div>
+          <app-book-card [title]="book.title" [authors]="getAuthorNames(book.authors)"
+            [coverImage]="getCoverImage(book)"></app-book-card>
         </div>
       </div>
     </div>
