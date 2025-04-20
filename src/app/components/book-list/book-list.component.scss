@@ -20,6 +20,11 @@ a {
   background-color: $color-grey-light;
 }
 
+.books-grid{
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 .book-card {
   & .book-cover {
     width: 114px;

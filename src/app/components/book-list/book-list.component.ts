@@ -45,11 +45,8 @@ export class BookListComponent {
 
   loadBooks(): void {
     if (this.isLoading || !this.hasMore) return;
-
     this.isLoading = true;
-
     const languages = this.languageFilter ? this.languageFilter.split(',') : undefined;
-
     this.bookService.getBooks(
       this.currentPage,
       this.searchQuery,
