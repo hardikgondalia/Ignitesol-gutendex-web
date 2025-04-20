@@ -27,6 +27,8 @@
     font-size: 16px;
     font-weight: $font-regular;
     color: $color-grey-dark;
+    background-color: $color-secondary;
+    height: 100vh;
 }
 
 .body {
@@ -41,6 +43,7 @@
     font-size: 16px;
     font-weight: $font-regular;
     color: $color-grey-medium;
+    background-color: $color-grey-light;
 }
 
 .book-name {
