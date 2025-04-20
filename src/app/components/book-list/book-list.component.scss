@@ -1,3 +1,5 @@
+@use "../../../assets/variables" as *;
+
 a {
   text-decoration: none;
   color: inherit;
@@ -10,11 +12,36 @@ a {
   height: 40px;
 }
 
+.search-box {
+  font-family: $primary_font_family;
+  font-size: 16px;
+  font-weight: $font-regular;
+  color: $color-grey-medium;
+  background-color: $color-grey-light;
+}
+
 .book-card {
-  .rectangle {
+  & .book-cover {
     width: 114px;
     height: 162px;
     border-radius: 8px;
     box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    max-width: 100%;
+    height: auto;
   }
+
+  & .book-name {
+    font-family: $primary_font_family;
+    font-size: 12px;
+    font-weight: $font-regular;
+    color: $color-grey-dark;
+  }
+
+  & .author-name {
+    font-family: $primary_font_family;
+    font-size: 12px;
+    font-weight: $font-regular;
+    color: $color-grey-medium;
+  }
+
 }

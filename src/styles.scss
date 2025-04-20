@@ -28,34 +28,5 @@
     font-weight: $font-regular;
     color: $color-grey-dark;
     background-color: $color-secondary;
-    height: 100vh;
-}
-
-.body {
-    font-family: $primary_font_family;
-    font-size: 16px;
-    font-weight: $font-regular;
-    color: $color-grey-dark;
-}
-
-.search-box {
-    font-family: $primary_font_family;
-    font-size: 16px;
-    font-weight: $font-regular;
-    color: $color-grey-medium;
-    background-color: $color-grey-light;
-}
-
-.book-name {
-    font-family: $primary_font_family;
-    font-size: 12px;
-    font-weight: $font-regular;
-    color: $color-grey-dark;
-}
-
-.author-name {
-    font-family: $primary_font_family;
-    font-size: 12px;
-    font-weight: $font-regular;
-    color: $color-grey-medium;
+    min-height: 100vh;
 }
