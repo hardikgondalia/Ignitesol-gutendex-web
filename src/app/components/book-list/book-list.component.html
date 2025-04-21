@@ -11,14 +11,14 @@
       <div class="row">
         <div class="col-12">
           <div class="input-group">
-            <span class="input-group-append">
-              <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5"
+            <span class="input-group-append position-absolute">
+              <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5 search-icon"
                 type="button">
                 <img src="../../../assets/images/Search.svg">
               </button>
             </span>
             <input class="form-control border-start-0 search-bar search-box" id="search" type="search"
-              [(ngModel)]="searchQuery" (input)="onSearchChange()" placeholder="Search">
+              [(ngModel)]="searchQuery" (input)="onSearchChange()" placeholder="Search" style="padding-left: 50px;">
           </div>
         </div>
       </div>

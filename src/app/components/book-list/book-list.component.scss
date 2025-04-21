@@ -29,3 +29,9 @@ a {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+.search-icon {
+  background: none !important;
+  border: none !important;
+  z-index: 6 !important;
+}
